@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Atividade 03 · Grid · Minhas atividades</title>
+<link rel="icon" href="../logo.png">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<header class="topo">
+  <a class="marca" href="../index.html"><img src="../logo.png" alt="Logo" width="44" height="44"><span>Minhas atividades</span></a>
+  <h1>Atividade 03 · Grid</h1>
+</header>
+<div class="corpo">
+  <main class="conteudo">
+<p>Exercício 2: montar layouts em CSS Grid. Em cada exemplo, o resultado está acima do código.</p>
+
+<h2>1. Colunas iguais</h2>
+<p><code>repeat(3, 1fr)</code> cria três colunas que dividem a largura por igual.</p>
+<div class="demo g-um"><div>1</div><div>2</div><div>3</div><div>4</div><div>5</div><div>6</div></div>
+<pre><code>.grade { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }</code></pre>
+
+<h2>2. Áreas nomeadas</h2>
+<p>Com <code>grid-template-areas</code> o layout fica desenhado no próprio CSS.</p>
+<div class="demo g-dois"><div class="a-topo">topo</div><div class="a-menu">menu</div><div class="a-texto">texto</div><div class="a-rodape">rodapé</div></div>
+<pre><code>.pagina {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-areas:
+    &quot;topo   topo&quot;
+    &quot;menu   texto&quot;
+    &quot;rodape rodape&quot;;
+  gap: 8px;
+}
+.topo   { grid-area: topo; }
+.menu   { grid-area: menu; }
+.texto  { grid-area: texto; }
+.rodape { grid-area: rodape; }</code></pre>
+
+<h2>3. Colunas que se ajustam</h2>
+<p>Com <code>auto-fit</code> e <code>minmax</code>, o número de colunas muda conforme a largura da tela. Redimensione a janela para ver.</p>
+<div class="demo g-tres"><div>A</div><div>B</div><div>C</div><div>D</div><div>E</div><div>F</div></div>
+<pre><code>.cartoes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 10px;
+}</code></pre>
+
+<h2>4. Itens que ocupam mais de uma célula</h2>
+<div class="demo g-quatro"><div class="largo">largo (2 colunas)</div><div class="alto">alto (2 linhas)</div><div>3</div><div>4</div><div>5</div></div>
+<pre><code>.item-largo { grid-column: 1 / span 2; }
+.item-alto  { grid-row: 1 / span 2; }</code></pre>
+  </main>
+</div>
+<footer class="rodape">
+  <p>Atividades de desenvolvimento web · BSI</p>
+</footer>
+</body>
+</html>

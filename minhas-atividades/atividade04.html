@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Atividade 04 · Hospedagem · Minhas atividades</title>
+<link rel="icon" href="logo.png">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="topo">
+  <a class="marca" href="index.html"><img src="logo.png" alt="Logo" width="44" height="44"><span>Minhas atividades</span></a>
+  <h1>Atividade 04 · Hospedagem</h1>
+</header>
+<div class="corpo">
+  <main class="conteudo">
+<p>Comparativo de serviços de hospedagem, com foco no plano básico e nos planos grátis.</p>
+
+<h2>Planos pagos de entrada</h2>
+<div class='rolagem'><table><thead><tr><th>Empresa</th><th>Plano</th><th>Preço</th><th>Espaço</th><th>Linguagens</th><th>Banco de dados</th><th>O que oferece</th></tr></thead><tbody><tr><td>Locaweb</td><td>Hospedagem (plano de entrada)</td><td>a partir de ~R$ 7,90 a R$ 12,90/mês em contrato longo; renovação bem maior</td><td>SSD, anunciado como ilimitado (política de uso justo)</td><td>PHP (Linux); ASP/.NET em planos Windows</td><td>MySQL</td><td>SSL grátis no 1º ano, domínio grátis no plano anual, e-mails, criador de sites, painel próprio, servidores no Brasil</td></tr>
+<tr><td>Hostinger</td><td>Single</td><td>~R$ 8,99/mês (promo anual); renova mais caro</td><td>10 GB SSD</td><td>PHP; WordPress</td><td>MySQL (2 bancos)</td><td>SSL grátis, 1 site, 1 e-mail, backup semanal, hPanel, suporte 24/7 em português; sem SSH nesse plano</td></tr>
+<tr><td>HostGator Brasil</td><td>Plano P (também há o Start)</td><td>~R$ 6,89 a R$ 10,99/mês (promo); renovação maior</td><td>100 GB (Start: 50 GB NVMe)</td><td>PHP; WordPress</td><td>MySQL</td><td>1 site, SSL grátis, e-mail, criador de sites, domínio grátis no plano anual, cPanel</td></tr>
+<tr><td>GoDaddy</td><td>Plano inicial de hospedagem</td><td>~R$ 15,99/mês (valor de uma comparação de mercado)</td><td>varia por plano; conferir no site</td><td>PHP; WordPress</td><td>MySQL</td><td>SSL grátis, CDN, domínio grátis no ano 1 em ciclo anual</td></tr>
+<tr><td>Bluehost</td><td>Basic</td><td>~R$ 15 a R$ 25/mês (promo, convertido); renovação bem mais alta</td><td>10 GB SSD</td><td>PHP; WordPress</td><td>MySQL</td><td>Recomendada pelo WordPress.org, SSL grátis, domínio grátis no 1º ano</td></tr>
+<tr><td>WordPress.com</td><td>Plano pago de entrada (o plano grátis está abaixo)</td><td>conferir no site; cobrado em dólar</td><td>varia por plano</td><td>Não é hospedagem livre: roda só WordPress</td><td>Gerenciado pela plataforma</td><td>Plugins e temas próprios só em planos pagos; foco em blog e site institucional</td></tr>
+</tbody></table></div>
+
+<h2>Planos grátis</h2>
+<div class='rolagem'><table><thead><tr><th>Empresa</th><th>Plano</th><th>Preço</th><th>Espaço</th><th>Linguagens</th><th>Banco de dados</th><th>O que oferece</th></tr></thead><tbody><tr><td>WordPress.com</td><td>Free</td><td>R$ 0</td><td>limite pequeno de espaço (conferir no site)</td><td>Só WordPress, sem código próprio</td><td>Gerenciado</td><td>Endereço .wordpress.com, temas limitados, sem plugins; uso comercial é restrito</td></tr>
+<tr><td>GitHub Pages</td><td>Free</td><td>R$ 0</td><td>repositório até ~1 GB; ~100 GB de tráfego/mês</td><td>HTML, CSS, JavaScript (estático)</td><td>Nenhum</td><td>Deploy direto do repositório, HTTPS, domínio próprio. Não permitido para negócio ou e-commerce</td></tr>
+<tr><td>Netlify</td><td>Free</td><td>R$ 0</td><td>~100 GB de tráfego/mês</td><td>HTML, CSS, JS; funções serverless</td><td>Nenhum (usa serviços externos)</td><td>Deploy por arrastar pasta ou pelo Git, HTTPS, domínio próprio, preview de deploy, formulários</td></tr>
+<tr><td>Cloudflare Pages</td><td>Free</td><td>R$ 0</td><td>requisições estáticas ilimitadas; 500 builds/mês; 20.000 arquivos por site</td><td>HTML, CSS, JS; Pages Functions</td><td>Nenhum embutido (D1, KV à parte)</td><td>CDN global, HTTPS, domínio próprio; limites gratuitos mais folgados</td></tr>
+<tr><td>Vercel (Hobby)</td><td>Hobby</td><td>R$ 0</td><td>~100 GB de tráfego/mês</td><td>HTML, CSS, JS; Next.js; funções</td><td>Nenhum embutido</td><td>Deploy pelo Git, HTTPS. Só uso pessoal e não comercial</td></tr>
+<tr><td>Render</td><td>Free (site estático e web service)</td><td>R$ 0</td><td>web service: 750 horas/mês, com atraso de 30 a 50 s ao acordar</td><td>Estático; Node, Python e outros via container</td><td>PostgreSQL grátis por 90 dias</td><td>Serve para back-end simples e testes</td></tr>
+<tr><td>InfinityFree</td><td>Free</td><td>R$ 0</td><td>limitado (conferir no site)</td><td>PHP</td><td>MySQL</td><td>Hospedagem tradicional grátis com painel; com limites e sem garantia de desempenho</td></tr>
+</tbody></table></div>
+
+<h2>Minha escolha</h2>
+<p>O cenário da atividade é uma empresa que quer que eu faça e hospede o site. Isso é uso comercial, e dois dos grátis proíbem isso: o GitHub Pages não permite negócio ou loja online, e o Vercel Hobby é só para uso pessoal.</p>
+<p><strong>Escolha: Netlify (plano Free).</strong> Para um site estático em HTML e CSS, ele não declara restrição ao uso comercial, publica por arrastar a pasta ou por repositório Git, dá HTTPS e aceita domínio próprio. O <strong>Cloudflare Pages</strong> é a alternativa, com limites ainda mais folgados.</p>
+<p>Se o site precisar de PHP e MySQL, o grátis não serve bem: aí o caminho é um plano pago de entrada, como Hostinger Single ou HostGator Plano P.</p>
+
+<h2>Como publicar este site no Netlify</h2>
+<ol>
+<li>Crie uma conta gratuita em netlify.com.</li>
+<li>Abra a página de deploy por arrastar e soltar (Netlify Drop).</li>
+<li>Arraste a pasta <code>minhas-atividades</code> inteira.</li>
+<li>Copie o endereço gerado e coloque-o no seu trabalho.</li>
+</ol>
+  </main>
+</div>
+<footer class="rodape">
+  <p>Atividades de desenvolvimento web · BSI</p>
+</footer>
+</body>
+</html>

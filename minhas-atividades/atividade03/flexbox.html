@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Atividade 03 · Flexbox · Minhas atividades</title>
+<link rel="icon" href="../logo.png">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<header class="topo">
+  <a class="marca" href="../index.html"><img src="../logo.png" alt="Logo" width="44" height="44"><span>Minhas atividades</span></a>
+  <h1>Atividade 03 · Flexbox</h1>
+</header>
+<div class="corpo">
+  <main class="conteudo">
+<p>Exercício 3: propriedades do container flex e dos itens, seguindo a ordem do guia da TreinaWeb (parte 1, containers).</p>
+
+<h2>1. Direção</h2>
+<div class="demo f f-linha"><div>1</div><div>2</div><div>3</div></div>
+<div class="demo f f-coluna"><div>1</div><div>2</div><div>3</div></div>
+<pre><code>.container { display: flex; flex-direction: row; }  /* ou column */</code></pre>
+
+<h2>2. Distribuição no eixo principal</h2>
+<div class="demo f f-between"><div>1</div><div>2</div><div>3</div></div>
+<div class="demo f f-center"><div>1</div><div>2</div><div>3</div></div>
+<pre><code>.container { display: flex; justify-content: space-between; }
+/* flex-start | center | flex-end | space-between | space-around | space-evenly */</code></pre>
+
+<h2>3. Alinhamento no eixo cruzado</h2>
+<div class="demo f f-align"><div>1</div><div>2</div><div>3</div></div>
+<pre><code>.container { display: flex; align-items: center; height: 120px; }
+/* stretch | flex-start | center | flex-end | baseline */</code></pre>
+
+<h2>4. Quebra de linha</h2>
+<div class="demo f f-wrap"><div>1</div><div>2</div><div>3</div><div>4</div><div>5</div><div>6</div></div>
+<pre><code>.container { display: flex; flex-wrap: wrap; gap: 10px; }
+.item { flex: 0 0 140px; }</code></pre>
+
+<h2>5. Crescimento dos itens</h2>
+<div class="demo f f-grow"><div>flex: 1</div><div>flex: 2</div><div>flex: 1</div></div>
+<pre><code>.item-a { flex: 1; }
+.item-b { flex: 2; }   /* ocupa o dobro do espaço livre */
+.item-c { flex: 1; }</code></pre>
+  </main>
+</div>
+<footer class="rodape">
+  <p>Atividades de desenvolvimento web · BSI</p>
+</footer>
+</body>
+</html>

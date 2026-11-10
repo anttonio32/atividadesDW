@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Atividade 03 · Forms · Minhas atividades</title>
+<link rel="icon" href="../logo.png">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<header class="topo">
+  <a class="marca" href="../index.html"><img src="../logo.png" alt="Logo" width="44" height="44"><span>Minhas atividades</span></a>
+  <h1>Atividade 03 · Forms</h1>
+</header>
+<div class="corpo">
+  <main class="conteudo">
+<p>Exercício 1: formulário com os principais elementos. Os dados não são enviados a lugar nenhum; o botão apenas recarrega a página.</p>
+
+<form class="formulario" action="#" method="post">
+  <label for="nome">Nome</label>
+  <input type="text" id="nome" name="nome" required>
+
+  <label for="email">E-mail</label>
+  <input type="email" id="email" name="email">
+
+  <fieldset>
+    <legend>Curso</legend>
+    <label><input type="radio" name="curso" value="bsi" checked> BSI</label>
+    <label><input type="radio" name="curso" value="outro"> Outro</label>
+  </fieldset>
+
+  <label><input type="checkbox" name="aceito"> Aceito os termos</label>
+
+  <label for="semestre">Semestre</label>
+  <select id="semestre" name="semestre">
+    <option>1º</option><option>5º</option>
+  </select>
+
+  <label for="msg">Mensagem</label>
+  <textarea id="msg" name="msg" rows="3"></textarea>
+
+  <button type="submit">Enviar</button>
+</form>
+<p><a href="index.html">Voltar para a Atividade 03</a></p>
+  </main>
+</div>
+<footer class="rodape">
+  <p>Atividades de desenvolvimento web · BSI</p>
+</footer>
+</body>
+</html>
